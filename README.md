@@ -21,6 +21,11 @@ Anyway. I'm adding the BMI Lines now and might try to figure out how to add more
 # Some Insights
 Looking at the chart, it seems like BMI is a poor predictor for 8a.nu ranking. Which, to some extent, is surprising. Everyone that I know wants to lose weight so they can climb harder. I've definetly felt the effects of a 5 pound weight loss. But, people say that strength is directly correlated with cross-seciontal muscle. Although, [at least one study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1197179/) has shown that it is not the only indicator for muscle strength. The loose correlation between BMI and climbing ability is really encouraging to me; I can pursue my Tinder-Bod-2019 and not worry about loss of admiration from the gym bros.....
 
+So I did some polynomial regression (just to the power of 2) and, you cannot predict climbing ability from BMI or BMI from climbing ability (the best R^2 I got was.... 0.0054; this means that 0.5% of the change in BMI is explained by 8a.nu ranking). I honestly didn't think BMI would be very predictive of climbing ability, but was curious to see what the world of 8a had to say about it. And kinda wanted to build the web scraper funcitionality out a bit more. I think that you now have the ability to scrape all of 8a's "allowed" pages.
+
 Also, I thought it was interesting that the route-to-boulder grades relationship wasn't one-to-one. It seems like v7 == 13a, but v10 == 13c. This fits better with my experiences climbing than any other chart I've seen. Maybe I should make a new chart with this data. But I'm not sure what I would want it to look like, so I'm going to hold off on it for now.
 
 Further, climbing ability has an exponential decay; the point difference between the 1001th an 1100th ranked climbers is less than the difference between the 1st and 100th ranked person. However, it looks like there is more consisentcy in the lower ranked sport climbers than boulderers (i.e. sport climbers stay stronger than boulderers). 
+
+# Some beta on the graph
+You can toggle the lines displayed by clicking on them in the legend. You can zoom in and out by drawing a box on the graph, or if you hover near the axis and click-drag parallel to it, it will auto scale the other axis.
